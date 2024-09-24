@@ -15,23 +15,6 @@ let company = { // тот же самый объект, сжатый для кр
   }
 };
 
-function fib(n) {
-  let a = 1;
-  let b = 2;
-let c = [1, 1, 2];
-  for (let i = 1; c.length <= n; i++) {
-    c.push(a + b);
-    a = b;
-    b = c[i];
-  }
-  return c[c.length - 1];
-}
-console.log(fib(3));
-console.log(fib(7));
-console.log(fib(77));
-// ******---------*****
-
-
 //************************* */
 
 fs.copy(pathToFile, pathToCopy)
@@ -187,6 +170,22 @@ http.createServer(function (req, res) {
   res.end('Hello World!');
 }).listen(8080);
 
+
+function fib(n) {
+  let a = 1;
+  let b = 2;
+let c = [1, 1, 2];
+  for (let i = 1; c.length <= n; i++) {
+    c.push(a + b);
+    a = b;
+    b = c[i];
+  }
+  return c[c.length - 1];
+}
+console.log(fib(3));
+console.log(fib(7));
+console.log(fib(77));
+// ******---------*****
 
 
 console.log('Hello world');
